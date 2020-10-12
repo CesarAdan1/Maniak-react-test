@@ -1,0 +1,13 @@
+.header_container{
+    display: block;
+    
+}
+
+.header-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #FFFFFF;
+}
