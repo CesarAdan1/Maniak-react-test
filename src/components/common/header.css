@@ -7,7 +7,36 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-left: 40px;
-    padding-right: 40px;
-    background-color: #FFFFFF;
+    padding-left: 174px;
+    padding-right: 174px;
+    height: var(--header-height);
+    background-color: var(--header-background-color);
+}
+
+.header_right_cont{
+    list-style: none;
+    padding-top: 10px;
+    display: flex;
+    
+}
+
+.header_right_li{
+    padding-top: 10px; 
+    text-decoration: none;
+    padding-right: 16px;
+    padding-left: 16px;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: Roboto;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    color: var(--header-color-menu-item);
+}
+
+
+.header_right_orientation{
+    display: flex;
 }

@@ -4,3 +4,21 @@
     margin: 0;
     overflow-x: hidden;
 }
+
+body {
+
+    background-color: var(--body-background-color)
+}
+
+a {
+    text-decoration: none;
+}
+
+:root {
+    --header-background-color: #ffff;
+    --header-height:64px;
+    --header-color-menu-item: #0A21B4;
+    --body-background-color: #F9FAFF;
+    --black: black;
+    --blue: #0A21B4;
+}
