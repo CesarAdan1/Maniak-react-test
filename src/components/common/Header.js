@@ -5,19 +5,19 @@ import './header.css';
 const Routes = [
     {
         title: "Home",
-        path: "/"
-    },
-    {
-        title: "Configurator",
         path: "/page-1"
     },
     {
-        title: "Stories",
+        title: "Configurator",
         path: "/page-2"
     },
     {
+        title: "Stories",
+        path: "/#"
+    },
+    {
         title: "Partners",
-        path: "/notfound"
+        path: "/#"
     }
   
 ];

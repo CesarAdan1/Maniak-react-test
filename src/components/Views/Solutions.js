@@ -1,21 +1,43 @@
 import React from 'react'
-import { LeftSquareComponent, RightSquareComponent, Container } from '../containers';
+import { BottomContainer, TopContainer, Container } from '../containers';
+import { RightArrow, LeftArrow, TextBlue, TextChange, CountChange, CommentChangeable } from './ViewComponents';
 import './home.css';
+
+import styled from 'styled-components'
+
+const ComponentStyles = styled.div `
+
+`;
 
 const Solutions = () => {
     return (
-        <Container>
+        <ComponentStyles>
+            <Container>
             <div className="home__content_right">
-                <LeftSquareComponent>
-                    help!!
-                </LeftSquareComponent>
+                <TopContainer 
+                    leftContent={<TextBlue />}
+                />
             </div> 
             <div className="home__content_left">
-                <RightSquareComponent>
-                    In my Life
-                </RightSquareComponent>
+                <BottomContainer 
+                    leftSide={<TextChange />}
+                    rightSide={<CommentChangeable />}
+                    changeIndicatorSideNumber={
+                        <div>
+                          <CountChange />
+                          <span>
+                              <LeftArrow />
+                              <RightArrow />
+                          </span>  
+                        </div>
+                        
+                        
+                        }
+                />
             </div>
-        </Container>
+        </Container> 
+        </ComponentStyles>
+       
     )
 }
 
